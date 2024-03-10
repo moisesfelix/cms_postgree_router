@@ -56,7 +56,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 onClick={handleAddClient}
                 sx={{ borderRadius: '20', height: '54px', fontSize: '1rem', marginTop: '10px' }}
               >
-                Novo Client
+                Novo Cliente
               </Button>
             </Toolbar>
             <List>
@@ -73,7 +73,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                   <ListItemIcon>
                     <PersonIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Clients" />
+                  <ListItemText primary="Clientes" />
                 </ListItem>
               </NextLink>
             </List>
