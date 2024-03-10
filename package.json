@@ -1,0 +1,11 @@
+{
+  "name": "webapi",
+  "scripts": {
+    "install-start": "npm install && node -r dotenv/config ./node_modules/.bin/concurrently 'npm --prefix api-cms install && npm --prefix api-cms start' 'npm --prefix webapi install && npm --prefix webapi start' 'npm --prefix app-cms install && npm --prefix app-cms run dev' 'npm --prefix api-router install && npm --prefix api-router start'",
+    "start": "node -r dotenv/config ./node_modules/.bin/concurrently 'cd api-cms && npm start' 'cd app-cms && npm start'"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.0.3"
+  }
+}
